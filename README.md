@@ -15,12 +15,12 @@ Software Web Site: [https://support.10xgenomics.com/single-cell/software/pipelin
 Cell Ranger Installation: [https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation](https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation)
 
 ```
-$ ./build.sh [TAG]
+$ ./build.sh [Tag of docker images]
 ```
 
 ## Usage
 ```
-$ ./cellranger.sh [options]
+$ ./cellranger.sh [methods]
 ```
 
 ### Run
