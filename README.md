@@ -3,6 +3,9 @@
 Docker container for Cell Ranger.
 
 ## Cell Ranger
+
+Cell Ranger is a set of analysis pipelines that processes Chromium single cell 3’ RNA-seq output to align reads, generate gene-cell matrices and perform clustering and gene expression analysis.
+
 - [Software Web Site](https://support.10xgenomics.com/single-cell/software/pipelines/latest/what-is-cell-ranger)
 
 ## Requirements
