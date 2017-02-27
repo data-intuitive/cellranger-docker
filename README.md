@@ -3,16 +3,16 @@
 Docker container for Cell Ranger.
 
 ## Cell Ranger
-Software Web Site: [https://support.10xgenomics.com/single-cell/software/pipelines/latest/what-is-cell-ranger](https://support.10xgenomics.com/single-cell/software/pipelines/latest/what-is-cell-ranger)
+- [Software Web Site](https://support.10xgenomics.com/single-cell/software/pipelines/latest/what-is-cell-ranger)
 
 ## Requirements
-- Docker: [https://www.docker.com/](https://www.docker.com/)
-- Cell Ranger: [https://support.10xgenomics.com/single-cell/software/downloads/latest](https://support.10xgenomics.com/single-cell/software/downloads/latest)
+- [Docker](https://www.docker.com/)
+- [Cell Ranger](https://support.10xgenomics.com/single-cell/software/downloads/latest)
     - **Please download the software in advance.**
 
 ## Installation
 
-Cell Ranger Installation: [https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation](https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation)
+- [Cell Ranger Installation](https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation)
 
 ```
 $ ./build.sh [Tag of docker images]
