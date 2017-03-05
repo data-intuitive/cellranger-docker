@@ -6,7 +6,7 @@ Docker container for Cell Ranger.
 |:--|:--|:--|
 |Software|Cell Range|1.3.1|
 |Base image|CentOS|7.3.1611|
-|Docker container|cellranger-docekr|0.1.0|
+|Docker container|cellranger-docker|0.1.0|
 
 ## Cell Ranger
 
