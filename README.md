@@ -24,7 +24,7 @@ Cell Ranger is a set of analysis pipelines that processes Chromium single cell 3
 - [Cell Ranger Installation](https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation)
 
 ```
-$ ./build.sh [Tag of docker images]
+$ ./build.sh
 ```
 
 ## Usage
