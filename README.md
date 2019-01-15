@@ -1,12 +1,14 @@
 # cellranger-docker
 
-Docker container for Cell Ranger.
+This is a fork of [koash/cellranger-docker](https://github.com/koash/cellranger-docker) aimed at creating a Docker container with an up-to-date version of CellRanger.
+
+I did not touch the original Dockerfile when it comes to the base image for the container.
 
 |Label|Name|Version|
 |:--|:--|:--|
-|Software|Cell Range|1.3.1|
+|Software|Cell Range|3.0.1|
 |Base image|CentOS|7.3.1611|
-|Docker container|cellranger-docker|0.1.0|
+|Docker container|cellranger-docker|3.0.1|
 
 ## Cell Ranger
 
@@ -21,83 +23,31 @@ Cell Ranger is a set of analysis pipelines that processes Chromium single cell 3
 
 ## Installation
 
-- [Cell Ranger Installation](https://support.10xgenomics.com/single-cell/software/pipelines/latest/installation)
+1. Clone this repository
 
 ```
-$ ./build.sh
+git clone https://github.com/data-intuitive/cellranger-docker
+cd cellranger-docker
+```
+
+2. Download `cellranger-3.0.1.tar.gz` from the [website](https://github.com/data-intuitive/cellranger-docker) and put it in the `cellranger-docker` directory.
+
+3. Build the dockerfile
+
+```
+docker build -t cellranger:3.0.1 .
 ```
 
 ## Usage
-```
-$ ./cellranger.sh [methods]
-```
 
-### Run
+Use the following as if you would normally run the tool:
 
 ```
-Usage:
-    cellranger mkfastq
-
-    cellranger count
-    cellranger aggr
-    cellranger reanalyze
-    cellranger mkloupe
-
-    cellranger mkgtf
-    cellranger mkref
-
-    cellranger testrun
-    cellranger upload
-    cellranger sitecheck
+./cellranger.sh [methods]
 ```
 
-### Site Check Script
+## Verify Installation
 ```
-$ ./cellranger.sh sitecheck > sitecheck.txt
-```
-
-### Verify Installation
-```
-$ ./cellranger.sh testrun --id=tiny
-```
-
-```
-cellranger testrun (1.3.1)
-Copyright (c) 2017 10x Genomics, Inc.  All rights reserved.
--------------------------------------------------------------------------------
-
-Running Cell Ranger in test mode...
-
-Martian Runtime - 1.3.1 (2.1.2)
-Running preflight checks (please wait)...
-Checking sample info...
-Checking FASTQ folder...
-Checking transcriptome...
-Checking reference_path (/opt/cellranger-1.3.1/cellranger-cs/1.3.1/bin/../../../cellranger-tiny-ref/1.2.0)...
-Checking chemistry...
-Checking system environment...
-mrc: 1.3.1 (2.1.2)
-
-mrp: 1.3.1 (2.1.2)
-
-Anaconda: Python 2.7.12 :: Anaconda 2.2.0 (64-bit)
-
-numpy: 1.11.2
-
-scipy: 0.18.1
-
-pysam: 0.9.1
-
-h5py: 2.4.0
-
-pandas: 0.18.1
-
-STAR: STAR_2.5.1b
-
-2017-02-24 20:04:56 [runtime] (ready)           ID.tiny.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SETUP_CHUNKS
-2017-02-24 20:04:59 [runtime] (split_complete)  ID.tiny.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SETUP_CHUNKS
-...
-
-Pipestance completed successfully!
+./cellranger.sh testrun --id=tiny
 ```
 

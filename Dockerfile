@@ -10,7 +10,7 @@ RUN \
   which && \
   yum clean all
 
-ENV CELLRANGER_VER 1.3.1
+ENV CELLRANGER_VER 3.0.1
 
 # Pre-downloaded file
 COPY cellranger-$CELLRANGER_VER.tar.gz /opt/cellranger-$CELLRANGER_VER.tar.gz

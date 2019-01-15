@@ -1,9 +1,3 @@
 #!/bin/bash
-docker \
-  run \
-  --rm \
-  -it \
-  -v $(pwd):/share \
-  --workdir=/share \
-  koash/cellranger:0.1.0 \
-  cellranger $@
+
+docker run -it -v "`pwd`":/share cellranger:3.0.1 cellranger $@
